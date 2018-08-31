@@ -43,6 +43,7 @@ def turn(board)
     if (index < 0)
       puts "Invalid entry.  #{index}"
       puts ""
+    end
   end
   if valid_move?(board, index)
       move(board, index, 'X')

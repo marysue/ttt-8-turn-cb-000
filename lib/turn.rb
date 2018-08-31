@@ -11,7 +11,7 @@ end
 def input_to_index(input)
   #returns 0 if not a float or int
   index = input.to_i
-  if index.between(1,9)
+  if index.between?(1,9)
     return (index - 1)
   else
     return -1
@@ -46,5 +46,5 @@ def turn(board)
   else
     puts "Invalid move.  "
     turn(board)
-  end    
+  end
 end

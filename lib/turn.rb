@@ -8,7 +8,6 @@ def display_board(board)
   #puts(" ")
   #puts(" ")
 end
-
 def input_to_index(input)
   #returns 0 if not a float or int
   index = input.to_i
@@ -18,7 +17,6 @@ def input_to_index(input)
     return -1
   end
 end
-
 def position_taken?(board, index)
   if (board[index] == 'X' || board[index] == 'O')
     return true
@@ -33,7 +31,9 @@ def valid_move?(board, index)
     return false
   end
 end
-
 def move(board, index, token='X')
   board[index] = token
+end
+def turn(board)
+  puts "Please enter 1-9:"
 end

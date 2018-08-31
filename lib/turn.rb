@@ -41,7 +41,7 @@ def turn(board)
     input = gets.strip
     index = input_to_index(input)
     if (index < 0)
-      puts "Invalid entry.  #{index}"
+      puts "Invalid entry.  #{input}"
       puts ""
     end
   end
